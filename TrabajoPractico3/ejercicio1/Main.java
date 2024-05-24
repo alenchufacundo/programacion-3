@@ -17,7 +17,17 @@ public class Main {
             System.out.println(pac.getNombre() + " " + pac.getApellido());
         }
 
-        // doy de
+        // da de alta el paciente
+        habitacionInicial.altaPaciente(paciente1);
+
+        System.out.println("Pacientes internados restantes");
+        cantidadPacientes = habitacionInicial.getPacientesInternados();
+        for (Paciente p : cantidadPacientes) {
+            System.out.println(p.getNombre() + " " + p.getApellido());
+        }
+
+        // interno un nuevo paciente
+        habitacionInicial.internarPaciente(paciente2);
 
     }
 }
